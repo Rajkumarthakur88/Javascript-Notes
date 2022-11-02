@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a link using Javascript</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h1">Hello This is main heading of Container</h1>
+      <h2></h2>
+      <ul class="ul">
+        <li>My name is Rajkumar singh thakur</li>
+        <li class="li2">My name is Rajkumar singh thakur</li>
+      </ul>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      // // quick quiz
+      // // create a heading element with text as "Go to CodeWithHarry" and create an a tag outside it with href = "https://www.codewithharry.com"
+      let element = document.createElement("a");
+      element.setAttribute("href", "www.youtube.com/c/tractorkvideos");
+      element.innerText = "Click Here:  Go to Tractor K Videos Website";
+      let ul = document.querySelector("ul");
+      let heading = document.querySelector(".li2");
+
+      ul.insertBefore(element, heading);
+      //  heading.appendChild(element);
+    </script>
+  </body>
+</html>
